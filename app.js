@@ -26,6 +26,7 @@ $(function() {
             });
           });
           resetVideoHeight();
+          console.log(request);
        });
     });
     
@@ -39,6 +40,5 @@ function resetVideoHeight() {
 function init() {
     gapi.client.setApiKey("AIzaSyCg73DKLfMXVbmCfRIkD0o8pVDx6CcBLs8");
     gapi.client.load("youtube", "v3", function() {
-        // youtube api is ready
     });
 }
